@@ -3,6 +3,7 @@
 #include <string.h>
 #include "usuario.h"
 #include "tabelahash.h"
+#include "livro.h"
 
 UsuarioHash* criarTabelaUsuarios() {
     UsuarioHash* hash = malloc(sizeof(UsuarioHash));

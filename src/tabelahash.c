@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "tabelahash.h"
+#include "livro.h"
 
 int hashString(const char* str) {
     int hash = 0;
