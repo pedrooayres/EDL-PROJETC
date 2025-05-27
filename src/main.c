@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "livro.h"
+#include <string.h>
 #include "usuario.h"
 #include "emprestimo.h"
 
@@ -26,7 +27,7 @@ int main() {
         printf("0. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
-        getchar();  // Limpar buffer
+        getchar();  
 
         switch (opcao) {
             case 1:

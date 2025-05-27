@@ -17,5 +17,8 @@ void salvarLivros(LivroHash* tabela, const char* nomeArquivo);
 void carregarLivros(LivroHash* tabela, const char* nomeArquivo);
 void liberarLivros(LivroHash* tabela);
 void verificarDisponibilidadeLivro(LivroHash* tabela, const char* isbn);
+LivroHash* criarTabelaLivros();
+void listarLivros(LivroHash* tabela);
+
 
 #endif

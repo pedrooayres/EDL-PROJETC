@@ -2,10 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "usuario.h"
-
-int hashInt(int chave) {
-    return chave % TAMANHO_TABELA;
-}
+#include "tabelahash.h"
 
 UsuarioHash* criarTabelaUsuarios() {
     UsuarioHash* hash = malloc(sizeof(UsuarioHash));

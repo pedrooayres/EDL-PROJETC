@@ -7,3 +7,7 @@ int hashString(const char* str) {
         hash = (hash * 31 + *str++) % TAMANHO_TABELA;
     return hash;
 }
+
+int hashInt(int chave) {
+    return chave % TAMANHO_TABELA;
+}

@@ -2,12 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "livro.h"
+#include "tabelahash.h"
 
-int hashString(const char* str) {
-    int hash = 0;
-    while (*str) hash = (hash * 31 + *str++) % TAMANHO_TABELA;
-    return hash;
-}
 
 LivroHash* criarTabelaLivros() {
     LivroHash* hash = malloc(sizeof(LivroHash));
@@ -91,5 +87,18 @@ void verificarDisponibilidadeLivro(LivroHash* tabela, const char* isbn) {
             printf("Livro \"%s\" está disponível.\n", l->titulo);
     } else {
         printf("Livro não encontrado.\n");
+    }
+}
+
+void listarLivros(LivroHash* tabela) {
+    printf("Lista de Livros:\n");
+    for (int i = 0; i < TAMANHO_TABELA; i++) {
+        Livro* atual = tabela->tabela[i];
+        while (atual) {
+            printf("Título: %s | Autor: %s | ISBN: %s | Disponível: %s\n",
+                   atual->titulo, atual->autor, atual->isbn,
+                   atual->emprestado ? "Não" : "Sim");
+            atual = atual->prox;
+        }
     }
 }

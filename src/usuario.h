@@ -1,3 +1,4 @@
+
 #ifndef USUARIO_H
 #define USUARIO_H
 
@@ -14,5 +15,8 @@ Usuario* consultarUsuario(UsuarioHash* tabela, int id);
 void carregarUsuarios(UsuarioHash* tabela, const char* nomeArquivo);
 void salvarUsuarios(UsuarioHash* tabela, const char* nomeArquivo);
 void liberarUsuarios(UsuarioHash* tabela);
+
+UsuarioHash* criarTabelaUsuarios();
+
 
 #endif

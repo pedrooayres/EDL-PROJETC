@@ -17,7 +17,4 @@ typedef struct {
 int hashString(const char* str);
 int hashInt(int chave);
 
-LivroHash* criarTabelaLivros();
-UsuarioHash* criarTabelaUsuarios();
-
 #endif

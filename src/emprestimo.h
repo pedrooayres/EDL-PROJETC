@@ -1,6 +1,5 @@
 #ifndef EMPRESTIMO_H
 #define EMPRESTIMO_H
-
 #include "tabelahash.h"
 
 typedef struct Emprestimo {
