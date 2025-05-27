@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "livro.h"
-#include <string.h>
+#include "tabelahash.h"
 #include "usuario.h"
 #include "emprestimo.h"
 
